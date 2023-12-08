@@ -39,6 +39,11 @@
 
     <main>
         <p>My name is Taggert Baker, and I am a third-year Integrated Computer Science major here at Kansas State University. My main hobbies include sports, weightlifting, and video games. College has been a very humbling experience, and I hope to continue to improve each and every day and learn from my peers as I try to graduate and become a video game developer hopefully sometime in the near future!</p>
+        <button id="moreInfoBtn">Click here for more info</button>
+        <div id="extraInfo" style="display: none;">
+            <p>An interesting thing to know about me is that I am currently playing semi-professionally in the video game Counter-Strike, and I am currently trying to see if I can make it even further in the next couple years!</p>
+            <button id="lessInfoBtn">Show Less</button>
+        </div>
     </main>
 
   <nav>
@@ -59,5 +64,16 @@
       }, 10);
   }
     
+    <script>
+    document.getElementById('moreInfoBtn').onclick = function() {
+        document.getElementById('extraInfo').style.display = 'block';
+        this.style.display = 'none';
+    };
+
+    document.getElementById('lessInfoBtn').onclick = function() {
+        document.getElementById('extraInfo').style.display = 'none';
+        document.getElementById('moreInfoBtn').style.display = 'block';
+    };
+    </script>
 </body>
 </html>
