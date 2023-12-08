@@ -35,9 +35,9 @@ footer {
 }
 
 nav ul {
-    list-style-type: none;
-    display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
 }
 
 li {
@@ -45,10 +45,11 @@ li {
 }
 
 nav a {
-    text-decoration: none;
     color: #E2E2E2;
     padding: 10px;
     margin: 5px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 @media (max-width: 768px) {
