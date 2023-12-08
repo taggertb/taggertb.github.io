@@ -101,6 +101,7 @@ nav a {
 }
 
 .rolling-circle {
+    z-index: 10;
     width: 30px;
     height: 30px;
     background-color: #FFFFFF;
