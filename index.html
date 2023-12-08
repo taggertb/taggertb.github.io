@@ -4,21 +4,40 @@
     <meta charset="UTF-8">
     <title>Personal Website</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
     <style>
         /* future animation */
     </style>
+
+To integrate the Bootstrap framework with your provided index.html and include the animated circle, here's how you can modify the code:
+
+html
+Copy code
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Existing head elements -->
 </head>
 <body id="pageBody">
-  <header>
+  <header class="container">
     <h1>Welcome to My Personal Page!</h1>
   </header>
 
-  <main>
-    <div class="rolling-circle"></div>
-    <div class="paragraph-box">
-      <p>Hi! My name is Taggert Baker, and I'm currently a Junior at Kansas State University. Explore my page!</p>
+  <main class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-12">
+        <div class="rolling-circle"></div>
+      </div>
     </div>
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <div class="paragraph-box">
+          <p>Hi! My name is Taggert Baker, and I'm currently a Junior at Kansas State University. Explore my page!</p>
+        </div>
+      </div>
+    </div>
+  </main>
 
   <nav>
     <ul>
