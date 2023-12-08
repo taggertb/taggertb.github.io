@@ -5,26 +5,41 @@
     <title>Personal Website</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        /* future animation */
+    </style>
 </head>
-<body>
+<body id="pageBody">
   <header>
     <h1>Welcome to My Personal Page!</h1>
   </header>
-
 
   <main>
     <div class="paragraph-box">
       <p>Hi! My name is Taggert Baker, and I'm currently a Junior at Kansas State University. Explore my page!</p>
     </div>
 
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="resume.html">My Resume</a></li>
-        <li><a href="picturesofme.html">Pictures of Me!</a></li>
-        <li><a href="aboutme.html">About Me!</a></li>
-      </ul>
-    </nav>
-  </main>
+  <nav>
+    <ul>
+      <li><a href="index.html" onclick="applyTransition()">Home</a></li>
+      <li><a href="resume.html" onclick="applyTransition()">My Resume</a></li>
+      <li><a href="picturesofme.html" onclick="applyTransition()">Pictures of Me!</a></li>
+      <li><a href="aboutme.html" onclick="applyTransition()">About Me!</a></li>
+    </ul>
+  </nav>
+
+  <script>
+  function applyTransition() {
+      var body = document.getElementById('pageBody');
+      body.classList.add('fade-transition');
+      setTimeout(function() {
+          body.classList.add('fade-in');
+      }, 10);
+  }
+
+  window.addEventListener('load', function() {
+      document.getElementById('pageBody').classList.add('fade-in');
+  });
+  </script>
 </body>
 </html>
