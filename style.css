@@ -46,7 +46,9 @@ li {
 
 nav a {
     text-decoration: none;
-    color: #fff;
+    color: #E2E2E2;
+    padding: 10px;
+    margin: 5px;
 }
 
 @media (max-width: 768px) {
