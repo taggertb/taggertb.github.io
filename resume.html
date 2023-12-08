@@ -72,12 +72,21 @@
 
   <nav>
     <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="resume.html">My Resume</a></li>
-        <li><a href="picturesofme.html">Pictures of Me!</a></li>
-        <li><a href="aboutme.html">About Me</a></li>
+      <li><a href="index.html" onclick="applyTransition()">Home</a></li>
+      <li><a href="resume.html" onclick="applyTransition()">My Resume</a></li>
+      <li><a href="picturesofme.html" onclick="applyTransition()">Pictures of Me!</a></li>
+      <li><a href="aboutme.html" onclick="applyTransition()">About Me!</a></li>
     </ul>
-    </nav>
+  </nav>
+
+  <script>
+  function applyTransition() {
+      var body = document.getElementById('pageBody');
+      body.classList.add('fade-transition');
+      setTimeout(function() {
+          body.classList.add('fade-in');
+      }, 10);
+  }
 
 </body>
 
