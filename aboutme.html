@@ -41,14 +41,23 @@
         <p>My name is Taggert Baker, and I am a third-year Integrated Computer Science major here at Kansas State University. My main hobbies include sports, weightlifting, and video games. College has been a very humbling experience, and I hope to continue to improve each and every day and learn from my peers as I try to graduate and become a video game developer hopefully sometime in the near future!</p>
     </main>
 
-    <nav>
+  <nav>
     <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="resume.html">My Resume</a></li>
-        <li><a href="picturesofme.html">Pictures of Me!</a></li>
-        <li><a href="aboutme.html">About Me</a></li>
+      <li><a href="index.html" onclick="applyTransition()">Home</a></li>
+      <li><a href="resume.html" onclick="applyTransition()">My Resume</a></li>
+      <li><a href="picturesofme.html" onclick="applyTransition()">Pictures of Me!</a></li>
+      <li><a href="aboutme.html" onclick="applyTransition()">About Me!</a></li>
     </ul>
-    </nav>
+  </nav>
+
+  <script>
+  function applyTransition() {
+      var body = document.getElementById('pageBody');
+      body.classList.add('fade-transition');
+      setTimeout(function() {
+          body.classList.add('fade-in');
+      }, 10);
+  }
     
 </body>
 </html>
